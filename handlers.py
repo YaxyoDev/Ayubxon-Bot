@@ -9,12 +9,12 @@ from database import (
     buyurtmalar_olish, 
     buyurtmalar_ochirish
 )
+from config import bot
 
 router = Router()
 
 GROUP_ID = -5324615076
-TOKEN = "8778288624:AAHiTg9f7q_pvfPvP_oj_DFLCjmIT2pWuAQ"
-bot = Bot(TOKEN)
+
 
 @router.message(Command('start'))
 async def start_cmd(message: Message):
